@@ -257,7 +257,7 @@ export function SkyScene({ exoplanet }) {
   }
 
   if (stars.length === 0) {
-    return <div className="p-4">Loading...</div>
+    return <div className="p-4">Loading stars...<br/>Please be patient, it might take some time to load stars.</div>
   }
 
   return (
