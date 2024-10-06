@@ -20,7 +20,7 @@ export function ExoplanetSelector({ onSelect }) {
 
   const fetchExoplanets = async () => {
     try {
-      const response = await fetch(appConfig.apiURL+'/api/exoplanets/?limit=1000')
+      const response = await fetch(appConfig.apiURL+'/api/exoplanets/?limit=5765')
       const data = await response.json()
       setExoplanets(data.data)
       setIsLoading(false)
