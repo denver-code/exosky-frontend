@@ -260,6 +260,7 @@ export function SkyScene({ exoplanet }) {
     return <div className="p-4">Loading stars...<br/>Please be patient, it might take some time to load stars.</div>
   }
 
+
   return (
     <div className="w-full h-screen flex">
       <div className="flex-grow">
@@ -287,6 +288,21 @@ export function SkyScene({ exoplanet }) {
       </div>
 
       <div className="w-1/4 p-4 overflow-y-auto border-l">
+      {/* controls help */}
+      <Card className="mb-4">
+          <CardHeader>
+            <CardTitle>Controls Guide</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p>
+              LMB - View around <br/>
+              RMB - Move around <br/>
+              MMB + Scroll - Zoom in/out<br/>
+              MMB + Move - Fast zoom in/out<br/>
+            </p>
+          </CardContent>
+        </Card>
+          
         <Card className="mb-4">
           <CardHeader>
             <CardTitle>Create Constellation</CardTitle>
